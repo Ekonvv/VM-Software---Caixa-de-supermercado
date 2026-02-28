@@ -1,11 +1,10 @@
-import { useState } from 'react'
+import Maincard from './Maincard'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
    <div>
-
+    <Maincard />
    </div>
   )
 }
