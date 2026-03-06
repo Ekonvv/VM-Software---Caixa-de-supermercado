@@ -8,35 +8,3 @@ body {
   background-color: white;
 }
 
-.Listcard {
-  background-color: rgb(231, 229, 229);
-  border: 2px solid rgb(231, 229, 229);
-  border-radius: 15px;
-  width: 30vw;
-  height: 10vw;
-  padding: 5px;
-
-}
-.Listcard th:first-of-type {
-  width: 30vh;
-}
-.Listcard table  {
-  border: 2px solid;
-  border-radius: 5px;
-  width: 28vw;
-  height: 10vh;
-}
-.Listcard table th:nth-child(2),td:nth-child(2) {
-  border-left: 2px solid;
-  text-align: center;
-}
-.Listcard table th:nth-child(3),td:nth-child(3) {
-  text-align: right;
-}
-.Listcard table tr:first-child,tr:last-child {
-  background-color: gray;
-
-}
-.Listcard * {
-  margin: 5px;
-}

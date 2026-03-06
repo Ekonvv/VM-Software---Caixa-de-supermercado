@@ -1,6 +1,8 @@
+import styles from "./Listcard.module.css"
+
 export function Listcard() {
     return(
-        <div className="Listcard">
+        <div className={styles.Listcard}>
             <input type="text" placeholder="Digite o código ou o nome do produto"/> 
             <button> Adicionar </button>
             <table>
