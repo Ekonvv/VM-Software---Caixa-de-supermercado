@@ -1,4 +1,4 @@
-export default function Dadoscard() {
+export function Dadoscard() {
     return(
         <div>
             

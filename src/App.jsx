@@ -1,10 +1,10 @@
-import Maincard from './Maincard'
+import { Home } from "./Pages/Home"
 
 function App() {
 
   return (
    <div>
-    <Maincard />
+      <Home />
    </div>
   )
 }

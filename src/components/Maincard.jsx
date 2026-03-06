@@ -1,6 +1,6 @@
-import Cardset from "./Cardset";
+import {Cardset} from "./Cardset";
 
-export default function Maincard() {
+export function Maincard() {
     return (
         <div className="Maincard">
             <h2> Controle de fluxo de caixa</h2>

@@ -1,6 +1,6 @@
-import Listcard from "./Listcard";
+import {Listcard} from "./Listcard";
 
-export default function Cardset() {
+export function Cardset() {
     return(
         <div>
             <Listcard />

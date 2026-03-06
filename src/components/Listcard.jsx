@@ -1,4 +1,4 @@
-export default function Listcard() {
+export function Listcard() {
     return(
         <div className="Listcard">
             <input type="text" placeholder="Digite o código ou o nome do produto"/> 
@@ -15,8 +15,8 @@ export default function Listcard() {
                     <td>92reisreis</td>
                 </tr>
                 <tr>
-                    <th>Total :</th>
-                    <th>50</th>
+                    <th >Total :</th>
+                    <th colSpan={2}>50</th>
                 </tr>
             </table>
         </div>

@@ -8,17 +8,6 @@ body {
   background-color: white;
 }
 
-.Maincard {
-  background-color: rgb(211, 210, 210);
-  border: 2px solid rgb(211, 210, 210);
-  border-radius: 25px;
-  width: 60vw;
-  height: 70vh;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-}
 .Listcard {
   background-color: rgb(231, 229, 229);
   border: 2px solid rgb(231, 229, 229);
