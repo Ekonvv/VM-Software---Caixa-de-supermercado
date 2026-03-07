@@ -1,11 +1,11 @@
 .Maincard {
-  background-color: rgb(211, 210, 210);
-  border: 2px solid rgb(211, 210, 210);
+  background-color: rgb(236, 236, 236);
   border-radius: 25px;
-  width: 60vw;
+  width: 70vw;
   height: 70vh;
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+  padding: 20px;
 }

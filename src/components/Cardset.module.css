@@ -1,0 +1,16 @@
+.Cardset {
+  padding: 5px;
+  
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+
+  grid-template-areas:
+  "lista Pagamento"
+  "cliente cliente";
+
+  gap: 20px;
+}
+
+

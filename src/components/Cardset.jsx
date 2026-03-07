@@ -1,13 +1,15 @@
 import {Listcard} from "./Listcard";
-import { Dadoscard } from "./Dadoscard";
-
+import { Clientcard } from "./Clientcard";
+import { Pagamento } from "./Pagamento";
+import styles from "./Cardset.module.css"
 // colocar aqui as "funções" como a Listcard
 
 export function Cardset() {
     return(
-        <div>
+        <div className={styles.Cardset}>
             <Listcard />
-            <Dadoscard />
+            <Clientcard />
+            <Pagamento />
         </div>
     )
 }

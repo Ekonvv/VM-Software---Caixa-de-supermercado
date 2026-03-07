@@ -1,8 +1,0 @@
-.Dadoscard {
-    border: 2px solid;
-    display: flex;
-    flex-direction: column;
-}
-.Dadoscard input {
-    width: 8vw;
-}

@@ -1,9 +1,27 @@
-.Listcard {
-  width: 500px;
-  background: #f3f4f6;
-  padding: 20px;
+ .Listcard { /* fundo */
+  width: 47vw;
+  height: 40vh;
+  background: #ffffff;
+  padding: 10px;
   border-radius: 8px;
   font-family: Arial, Helvetica, sans-serif;
+  grid-area: lista;
+}
+
+.Listcard table { /* Tabela */
+  width: 95%;
+  height: 70%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  
+}
+
+.top{ /* Input e button */
+  display: flex;
+  flex-direction: row;
 }
 
 .Listcard input {
@@ -31,46 +49,60 @@
   background: #0f9e8d;
 }
 
-.Listcard th {
+.Listcard th { /* Table Header(todos) */
   background: #e5e7eb;
   padding: 10px;
   text-align: left;
   font-size: 14px;
-  color: #374151;
+  color: #000000;
 }
 
-.Listcard th:first-of-type {
+.Listcard th:first-of-type { /* Table Header(primeiro) */
   width: 30vh;
 }
-.Listcard table {
-  width: 100%;
-  margin-top: 20px;
-  border-collapse: collapse;
-  background: white;
-  border-radius: 6px;
-  overflow: hidden;
-}
-.Listcard table tr:first-of-type th:nth-child(2),tr:nth-of-type(2) td:nth-child(2) {
-  border-left: 1px solid #d1d5db;
+
+.Listcard th:nth-of-type(2) { /* Table Header(segundo) */
   text-align: center;
 }
 
-
-.Listcard td {
-  padding: 10px;
-  border-top: 1px solid #e5e7eb;
-  font-size: 14px;
-  color: #4b5563;
+.Item td { /* Table Itens(todos) */
+  padding-left: 10px;
 }
 
-.Listcard tr:last-child th {
-  background: transparent;
+.Item td:first { /* Table Itens(primeiros) */
+  text-align: left;
+}
+
+.Item td:nth-of-type(2){ /* Table Itens(segundos) */
+  border-left: 1px solid #787879;
+  text-align: center;
+}
+
+.Item td:last-of-type { /* Table Itens(Terceiros) */
+  text-align: right;
+}
+
+.Listcard tr:first-of-type th ~ th { /* Primeiro Table Header(Qtd, preço) */
+  width: 20%;
+}
+.Listcard tr:first-of-type th:last-child { /* Table Header(lixeira) */
+  width: 10px;
+}
+
+.Listcard tr:nth-last-of-type(even) {
+  background-color: #dddddd;
+}                                     /* CSS para deixar efeito zebra */
+.Listcard tr:nth-last-of-type(odd) {
+  background-color: #fafafa;
+}
+
+.Listcard tr:last-child th {  /* Último table header */
   font-weight: bold;
   font-size: 16px;
   color: #111827;
 }
 
-.Listcard tr:last-child th:last-child {
+.Listcard tr:last-child th:last-child { /* Preço total */
   text-align: right;
 }
 
