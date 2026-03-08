@@ -71,7 +71,7 @@
 
 .Item td:first { /* Table Itens(primeiros) */
   text-align: left;
-}
+} 
 
 .Item td:nth-of-type(2){ /* Table Itens(segundos) */
   border-left: 1px solid #787879;
