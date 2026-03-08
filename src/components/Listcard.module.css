@@ -1,4 +1,5 @@
- .Listcard { /* fundo */
+.Listcard {
+  /* fundo */
   width: 47vw;
   height: 40vh;
   background: #ffffff;
@@ -8,7 +9,8 @@
   grid-area: lista;
 }
 
-.Listcard table { /* Tabela */
+.Listcard table {
+  /* Tabela */
   width: 95%;
   height: 70%;
   margin-top: 20px;
@@ -16,16 +18,16 @@
   background: white;
   border-radius: 6px;
   overflow: hidden;
-  
 }
 
-.top{ /* Input e button */
+.top {
+  /* Input e button */
   display: flex;
   flex-direction: row;
 }
 
 .Listcard input {
-  width: 75%;
+  width: 84%;
   padding: 10px;
   border: 1px solid #d1d5db;
   border-radius: 6px;
@@ -49,7 +51,8 @@
   background: #0f9e8d;
 }
 
-.Listcard th { /* Table Header(todos) */
+.Listcard th {
+  /* Table Header(todos) */
   background: #e5e7eb;
   padding: 10px;
   text-align: left;
@@ -57,55 +60,77 @@
   color: #000000;
 }
 
-.Listcard th:first-of-type { /* Table Header(primeiro) */
+.Listcard th:first-of-type {
+  /* Table Header(primeiro) */
   width: 30vh;
 }
 
-.Listcard th:nth-of-type(2) { /* Table Header(segundo) */
+.Listcard th:nth-of-type(2) {
+  /* Table Header(segundo) */
   text-align: center;
 }
 
-.Item td { /* Table Itens(todos) */
-  padding-left: 10px;
-}
-
-.Item td:first { /* Table Itens(primeiros) */
-  text-align: left;
-} 
-
-.Item td:nth-of-type(2){ /* Table Itens(segundos) */
-  border-left: 1px solid #787879;
-  text-align: center;
-}
-
-.Item td:last-of-type { /* Table Itens(Terceiros) */
+.Listcard th:nth-of-type(3) {
   text-align: right;
 }
 
-.Listcard tr:first-of-type th ~ th { /* Primeiro Table Header(Qtd, preço) */
-  width: 20%;
-}
-.Listcard tr:first-of-type th:last-child { /* Table Header(lixeira) */
-  width: 10px;
+.Listcard th:last-child {
+  text-align: center;
+  width: 40px;
 }
 
-.Listcard tr:nth-last-of-type(even) {
+.Item td {
+  /* Table Itens(todos) */
+  padding-left: 10px;
+}
+
+.Item td:first-child {
+  /* Table Itens(primeiros) */
+  text-align: left;
+}
+
+.Item td:nth-of-type(2) {
+  /* Table Itens(segundos) */
+  text-align: center;
+}
+
+.Item td:nth-of-type(3) {
+  /* Table Itens(Terceiros) */
+  text-align: right;
+}
+
+.Item td:last-child {
+  /* Primeiro Table Header(Qtd, preço) */
+  text-align: center;
+}
+
+.Item td:nth-of-type(2) button:first-child {
+  /* Table Header(lixeira) */
+  margin-right: 10px;
+}
+
+.Listcard tr:nth-child(even) {
+  /* CSS para deixar efeito zebra */
   background-color: #dddddd;
-}                                     /* CSS para deixar efeito zebra */
-.Listcard tr:nth-last-of-type(odd) {
+}
+
+.Listcard tr:nth-child(odd) {
   background-color: #fafafa;
 }
 
-.Listcard tr:last-child th {  /* Último table header */
+.Listcard tr:last-child th {
+  /* Último table header */
   font-weight: bold;
   font-size: 16px;
   color: #111827;
 }
 
-.Listcard tr:last-child th:last-child { /* Preço total */
+.Listcard tr:last-child th:last-child {
+  /* Preço total */
   text-align: right;
+  white-space: nowrap;
 }
 
-.Listcard * {
-  margin: 5px;
+.empty {
+  text-align: center;
 }

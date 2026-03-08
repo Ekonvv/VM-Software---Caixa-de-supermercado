@@ -1,9 +1,9 @@
-.clientCard{
+.clientCard {
   width: 100%;
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   font-family: Arial, Helvetica, sans-serif;
   grid-area: cliente;
 }
@@ -11,10 +11,9 @@
   display: flex;
   flex-direction: row;
   gap: 15px;
-
 }
 
-.clientCard h3{
+.clientCard h3 {
   margin-bottom: 1vh;
   font-size: 16px;
   color: #374151;
@@ -22,7 +21,7 @@
 
 /* inputs */
 
-.clientCard input{
+.clientCard input {
   padding: 10px 12px;
   width: 30%;
   border-radius: 8px;
@@ -32,33 +31,29 @@
   outline: none;
 }
 
-.clientCard input:focus{
+.clientCard input:focus {
   border-color: #14b8a6;
   background: white;
 }
 
 /* botão */
 
-.clientCard button{
-  margin-left: 2vw;
-  margin-top: 10px;
+.clientCard button {
+  margin-left: 1vw;
+  margin-top: 3px;
   padding: 12px;
-
-
   border: none;
   border-radius: 8px;
-
-  background: linear-gradient(90deg,#38b2ac,#2ca4a4);
-
+  background: linear-gradient(90deg, #38b2ac, #2ca4a4);
   color: white;
   font-size: 16px;
   font-weight: 500;
-
   cursor: pointer;
   transition: 0.2s;
+  width: 8vw;
 }
 
-.clientCard button:hover{
+.clientCard button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
