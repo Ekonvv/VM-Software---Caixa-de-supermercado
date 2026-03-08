@@ -18,14 +18,14 @@ export function Listcard() {
 
         if (produtoExistente) {
 
-            setLista(lista.map(p =>
-                p.code === texto ? { ...p, qtd: p.qtd + 1 } : p
+            setLista(lista.map(p => //o ? e o : serve para fazer um rapido if/else
+                p.code === texto ? { ...p, qtd: p.qtd + 1 } : p // os tres pontos server para copia todas as propriedades do array
             ))
 
         } else {
 
-            setLista([...lista, { code: texto, qtd: 1 }])
-
+            setLista([...lista, { code: texto, qtd: 1 }]) //adicionar produto caso não exista
+            // copia todas as propriedades do item com o código == texto
         }
 
         setTexto("")
@@ -42,8 +42,7 @@ export function Listcard() {
     function diminuir(code) {
 
         setLista(
-            lista
-                .map(p =>
+            lista.map(p =>
                     p.code === code
                         ? { ...p, qtd: p.qtd - 1 }
                         : p
@@ -55,7 +54,7 @@ export function Listcard() {
 
     function remover(code) {
 
-        setLista(lista.filter(p => p.code !== code))
+        setLista(lista.filter(p => p.code !== code)) // aqui para remover um item da lista, criei outra lista inteira, mas sem o item indesejado
 
     }
 
