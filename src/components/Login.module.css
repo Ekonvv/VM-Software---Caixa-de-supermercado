@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul-ciano: #1ca7c7;
+  --azul-corporativo: #0f75b8;
+  --azul-profundo: #0a4e9b;
+  --branco: #ffffff;
+  --cinza-grafite: #2c2c2c;
+  --cinza-medio: #666666;
+  --cinza-claro: #e0e0e0;
+  --black: #080000;
+}
+
+/* ===== Layout Principal ===== */
+
+.login {
+  background-image: url(./img/fundo.png);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.login form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vh;
+  height: 70vh;
+  background: var(--branco);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Logo ===== */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  border-radius: 20px;
+  width: 30vw;
+  height: 70vh;
+}
+
+/* ===== Título ===== */
+
+.login h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--cinza-grafite);
+}
+
+/* ===== Campos ===== */
+
+.nome,
+.senha {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.nome label,
+.senha label {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--cinza-medio);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ===== Inputs ===== */
+
+.nome input,
+.eyes input {
+  width: 100%;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid var(--cinza-claro);
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+  padding: 0 14px;
+}
+
+.nome input:focus,
+.eyes input:focus {
+  border-color: var(--azul-ciano);
+  box-shadow: 0 0 0 3px rgba(28, 167, 199, 0.15);
+}
+
+/* ===== Campo Senha com Ícone ===== */
+
+.eyes {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.eyes input {
+  padding: 0 40px 0 14px;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--black);
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.eyeIcon:hover {
+  color: var(--azul-corporativo);
+}
+
+/* ===== Ícones do Label ===== */
+
+.icon {
+  width: 16px;
+  height: auto;
+  color: var(--black);
+}
+
+/* ===== Botão ===== */
+
+.entrar {
+  width: 100%;
+  height: 48px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--branco);
+  background: linear-gradient(90deg, var(--azul-ciano), var(--azul-profundo));
+  transition: 0.3s ease;
+}
+
+.entrar:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
