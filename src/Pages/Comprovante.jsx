@@ -1,34 +1,50 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import styles from "./Comprovante.module.css";
 
 export function Comprovante() {
   const location = useLocation();
+  const navigate = useNavigate();
+  const { dados } = location.state || {};
 
-  const { cliente, lista, pagamento, total } = location.state || {};
+  // Se não houver dados, mostra mensagem
+  if (!dados) {
+    return (
+      <div>
+        <h1>COMPROVANTE</h1>
+        <p>Nenhuma venda finalizada!</p>
+        <button onClick={() => navigate("/Caixa")}>Voltar ao Caixa</button>
+      </div>
+    );
+  }
 
   return (
-    <div style={{ padding: 30 }}>
-      <h1>Comprovante</h1>
+    <div className={styles.container}>
+      <h1>COMPROVANTE DE VENDA</h1>
+      <p>Data: {new Date().toLocaleString("pt-BR")}</p>
 
       <h2>Cliente</h2>
-      <p>{cliente?.nome}</p>
-      <p>{cliente?.telefone}</p>
-      <p>{cliente?.cpf}</p>
+      <p>Nome: {dados.cliente?.nome || "Não informado"}</p>
+      <p>Telefone: {dados.cliente?.telefone || "Não informado"}</p>
+      <p>CPF: {dados.cliente?.cpf || "Não informado"}</p>
 
       <h2>Produtos</h2>
-
-      <ul>
-        {lista?.map((item) => (
-          <li key={item.code}>
-            {item.code} - Qtd: {item.qtd}
-          </li>
-        ))}
-      </ul>
+      {dados.lista?.map((item, i) => {
+        return (
+          <div key={i}>
+            <p>
+              Código: {item.code} - Quantidade: {item.qtd}
+            </p>
+          </div>
+        );
+      })}
 
       <h2>Pagamento</h2>
-      <p>{pagamento}</p>
+      <p>{dados.pagamento || "Não informado"}</p>
 
       <h2>Total</h2>
-      <p>R$ {total?.toFixed(2)}</p>
+      <p>R$ {dados.total?.toFixed(2) || "0.00"}</p>
+
+      <button onClick={() => navigate("/Caixa")}>Nova Venda</button>
     </div>
   );
 }
