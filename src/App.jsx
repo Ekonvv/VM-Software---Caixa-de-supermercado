@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./Pages/Home";
 import { TelaInicail } from "./Pages/TelaInicial";
-import { Comprovante } from "./Pages/Comprovante";
+import { Comprovante } from "./Pages/Comprovante"; // Mudou aqui para Pages
 export function App() {
   return (
     <BrowserRouter>

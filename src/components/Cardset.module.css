@@ -13,4 +13,25 @@
   gap: 20px;
 }
 
+/* BOTÃO FINALIZAR (IGUAL AO DA SEGUNDA IMAGEM) */
+.botao {
+  grid-column: span 2;
+  margin: 20px auto;
+  padding: 12px 30px;
+  width: auto; /* MUDA PRA auto EM VEZ DE 200px */
+  border: none;
+  border-radius: 6px; /* UM POUCO MENOS ARREDONDADO */
+  background: linear-gradient(90deg, #38b2ac, #2ca4a4);
+  color: white;
+  font-size: 16px;
+  font-weight: 600; /* UM POUCO MAIS FORTE */
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* SOMBRA LEVE */
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
 
